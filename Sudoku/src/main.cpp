@@ -1,6 +1,9 @@
 #include "backtrack1.h"
 #include <iostream>
 
+/**********************************************************************
+Main function that has the sudoku board we wish to solve.
+**********************************************************************/
 int main(int argc, char** argv) {
 
 	 int grid[9][9] = {{ 0, 3, 0, 0, 0, 0, 0, 2, 0 },
@@ -14,6 +17,7 @@ int main(int argc, char** argv) {
                   	   { 0, 7, 0, 0, 0, 0, 0, 3, 0 }
 			};
 
+	// if solvable, print the output
 	if(solve(grid) == true)
 		printGrid(grid);
 
